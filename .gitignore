@@ -1,0 +1,17 @@
+# Python Virtual Environment
+venv/
+ENV/
+.env
+
+# Python Bytecode (Junk)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS System Files
+.DS_Store
+
+# Data (Crucial: Don't upload raw CSVs to GitHub)
+**/data/*.csv
+**/data/*.json
