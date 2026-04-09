@@ -2,7 +2,7 @@
 
 A modular ML pipeline to predict Singapore HDB resale prices using Random Forest ensembles.
 
-## 📊 Performance
+## Performance
 | Metric | Baseline | Tuned |
 | :--- | :--- | :--- |
 | **Test $R^2$ Score** | 0.7875 | **0.7950** |
@@ -11,7 +11,7 @@ A modular ML pipeline to predict Singapore HDB resale prices using Random Forest
 
 ---
 
-## 🛠 Pipeline Breakdown
+## Pipeline Breakdown
 
 ### 1. Data Ingestion
 * **Source:** Data.gov.sg REST API.
@@ -34,13 +34,13 @@ Transform raw strings into high-signal numerical features:
 
 ---
 
-## 🧠 Key Insights
+## Key Insights
 * **Generalization:** Solved severe overfitting in Decision Trees (31% gap) by transitioning to Tuned Random Forests (3% gap).
 * **Feature Signal:** `floor_area_sqm` is the primary driver, while `lease_rem_years` accounts for property value decay.
 * **Inference Stability:** Prioritized stable Cross-Validation scores over individual test splits for more reliable deployment.
 
 ---
 
-## 🚀 Roadmap
+## Roadmap
 - **Month 2:** ML Pipeline & Model Optimization (Complete)
 - **Month 3:** FastAPI Deployment, Streamlit UI, and Azure Cloud Integration.
